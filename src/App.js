@@ -1,11 +1,14 @@
 import React from 'react';
+import NavigationBar from '../src/components/NavigationBar';
+import IntroPage from '../src/components/IntroPage';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>My Portfolio</h1>
-      <h2>Author: Dinu Senal</h2>
+      <NavigationBar />
+      <p>Dinu Senal</p>
+      <IntroPage />
     </div>
   );
 }
