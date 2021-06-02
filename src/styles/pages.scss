@@ -1,0 +1,69 @@
+.intro-page {
+    width: 100%;
+    height: 100%;
+    background-color: #C0D9C2;
+    .my-name {
+        text-transform: uppercase;
+        font-size: 60px;
+        font-weight: 500;
+        margin-top: 10%;
+        color: #FFF;
+    }
+    .profile-picture {
+        width: 100%;
+        height: 100%;
+    }
+    
+    @media only screen and (max-width: 470px) {
+        .my-name {
+          font-size: 40px;
+        }
+    }
+}
+
+.aboutme-page {
+    width: 100%;
+    height: 100%;
+    background-color: #E4C9B4;
+
+    .header {
+        text-align: center;
+        font-weight: 300;
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+    .sub-title {
+        text-align: center;
+        font-weight: 400;
+        font-size: 15px;
+        text-transform: uppercase;
+        opacity: 0.7;
+        letter-spacing: 3.5px;
+    }
+    .small-intro {
+        margin-left: auto;
+        margin-right: auto;
+        width: 45em;
+    }
+
+    @media only screen and (max-width: 795px) {
+        .small-intro {
+            width: 35em;
+        }
+    }
+    @media only screen and (max-width: 580px) {
+        .small-intro {
+            width: 29em;
+        }
+    }
+    @media only screen and (max-width: 490px) {
+        .small-intro {
+            width: 25em;
+        }
+    }
+    @media only screen and (max-width: 420px) {
+        .small-intro {
+            width: 19em;
+        }
+    }
+}

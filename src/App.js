@@ -1,14 +1,27 @@
 import React from 'react';
 import NavigationBar from '../src/components/NavigationBar';
-import IntroPage from '../src/components/IntroPage';
+import IntroPage from './pages/IntroPage';
+import AboutMePage from './pages/AboutMePage';
+import { HashLink } from 'react-router-hash-link';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Link,
+  useLocation,
+} from "react-router-dom";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
-      <p>Dinu Senal</p>
-      <IntroPage />
+      <Router>
+        <NavigationBar />
+          <HashLink smooth={true} to="/#AboutMePage" >
+        </HashLink>
+        
+        <IntroPage />
+        <AboutMePage />
+      </Router>
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/NavigationBar.scss';
+import { NavHashLink } from 'react-router-hash-link';
+import '../styles/components.scss';
 
 const NavigationBar = () => {
     return (
@@ -10,14 +11,16 @@ const NavigationBar = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
     
-              <div className="col-md-1" style={{fontFamily:'Quentin', fontSize:"20px"}}>
+              <div className="mr-1" style={{fontFamily:'Quentin', fontSize:"20px"}}>
                   D<span style={{color: 'rgb(82, 166, 164)'}}>S</span>ENAL
               </div>
               
               <div className="navbar collapse navbar-collapse" id="navbarToggler">
                 <ul className="nav col-md-4 ml-auto">
                   <li className="nav-item">
-                    <a className="nav-link" href="/#">About</a>
+                      <NavHashLink to="/#AboutMePage">
+                          <a className="nav-link">About</a>
+                      </NavHashLink>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="/#">Project</a>
